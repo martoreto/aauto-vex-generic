@@ -1,0 +1,27 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.github.martoreto.aauto.vex.generic">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <service android:name="com.github.martoreto.aauto.vex.generic.GenericCarStatsService"
+            android:label="@string/app_name"
+            android:permission="com.google.android.gms.permission.CAR_VENDOR_EXTENSION">
+            <intent-filter>
+                <action android:name="com.github.martoreto.aauto.vex.CAR_STATS_PROVIDER"/>
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".PermissionsActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Vex.Theme.Transparent" />
+    </application>
+
+</manifest>

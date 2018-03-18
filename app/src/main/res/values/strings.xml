@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Generic telemetry for Android Auto</string>
+    <string name="location_permission_denied">Denied location permission, funtionality will be limited.</string>
+</resources>
